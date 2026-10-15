@@ -2,6 +2,10 @@
 
 Una app web para registrar lo que aprendes, concentrarte y visualizar tu progreso. Desarrollada con HTML, CSS y JavaScript.
 
+[Probar la app](https://nayelisantos19.github.io/ritmo-study-app/) · [Mi portafolio](https://nayelisantos19.github.io/)
+
+![Panel de estudio de Ritmo](ritmo-panel.png)
+
 ## Funciones
 
 - Registro de sesiones con tema, materia, fecha, minutos y notas.
@@ -40,3 +44,9 @@ Los datos se guardan con localStorage en el navegador donde uses la app. No hay 
 Proyecto de portafolio desarrollado con asistencia de Codex, enfocado en practicar estructura semántica, CSS adaptable, eventos de JavaScript, gestión de estado y persistencia local.
 
 Próximas mejoras: editar sesiones, importar copias de seguridad y sincronizar entre dispositivos.
+
+
+## Modo de enfoque
+
+![Modo inmersivo de Ritmo](ritmo-enfoque.png)
+
