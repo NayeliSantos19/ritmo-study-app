@@ -1,0 +1,1008 @@
+{
+  "tool": "comp-spec",
+  "version": 1,
+  "createdAt": "2026-10-24T22:28:04.159Z",
+  "comp": ".impeccable/mocks/semana-horas.png",
+  "warnings": [],
+  "uncoveredInkCells": [],
+  "compSize": {
+    "width": 1536,
+    "height": 1024
+  },
+  "aspect": 1.5,
+  "orientation": "landscape",
+  "palette": [
+    {
+      "hex": "#f7f7f7",
+      "coverage": 0.977
+    },
+    {
+      "hex": "#d86849",
+      "coverage": 0.0141
+    },
+    {
+      "hex": "#a0aaba",
+      "coverage": 0.0037
+    },
+    {
+      "hex": "#082040",
+      "coverage": 0.0027
+    },
+    {
+      "hex": "#cdd3dd",
+      "coverage": 0.0025
+    }
+  ],
+  "bands": [
+    {
+      "y": 0.0235,
+      "strength": 0.3303
+    },
+    {
+      "y": 0.0471,
+      "strength": 0.2645
+    },
+    {
+      "y": 0.1294,
+      "strength": 0.4152
+    },
+    {
+      "y": 0.5176,
+      "strength": 0.2358
+    }
+  ],
+  "regions": [
+    {
+      "id": "sidebar",
+      "kind": "chrome",
+      "note": "Left navigation with wordmark and links",
+      "grid": "A0:B9",
+      "snap": false,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0.1543,
+        "h": 1
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 237,
+        "h": 1024
+      },
+      "aspect": 0.2314,
+      "palette": [
+        {
+          "hex": "#f8f7f7",
+          "coverage": 0.9924
+        },
+        {
+          "hex": "#42526d",
+          "coverage": 0.0037
+        },
+        {
+          "hex": "#cdd2dd",
+          "coverage": 0.0019
+        },
+        {
+          "hex": "#132e4e",
+          "coverage": 0.0015
+        },
+        {
+          "hex": "#687888",
+          "coverage": 0.0006
+        }
+      ],
+      "detail": {
+        "energy": 4.6643
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "headline",
+      "kind": "text",
+      "note": "Tu semana, a tu ritmo.",
+      "grid": "B0:F0",
+      "box": {
+        "x": 0.1725,
+        "y": 0.0195,
+        "w": 0.3451,
+        "h": 0.0391
+      },
+      "px": {
+        "x": 265,
+        "y": 20,
+        "w": 530,
+        "h": 40
+      },
+      "aspect": 13.25,
+      "palette": [
+        {
+          "hex": "#f7f7f8",
+          "coverage": 0.8284
+        },
+        {
+          "hex": "#0a2144",
+          "coverage": 0.1132
+        },
+        {
+          "hex": "#a6b0bf",
+          "coverage": 0.029
+        },
+        {
+          "hex": "#6e7d94",
+          "coverage": 0.018
+        },
+        {
+          "hex": "#22425f",
+          "coverage": 0.0114
+        }
+      ],
+      "detail": {
+        "energy": 70.0662
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 16,
+          "capHeightPx": 28.5,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.5789,
+          "advTall": 0.3158,
+          "advX": 0.5965,
+          "gap": 0.1404,
+          "xRatio": 0.7018,
+          "stemW": 0.1729,
+          "contrast": 1.2389,
+          "serif": null,
+          "densTall": 0.6598,
+          "densX": 0.6139,
+          "weight": 0.6598
+        },
+        "widthClass": "normal",
+        "weightClass": "bold",
+        "chosen": {
+          "family": "Martel Sans",
+          "weight": 700,
+          "fontSizePx": 41,
+          "source": "catalog",
+          "estimatedSize": true,
+          "stamp": "2e5c1cf34867"
+        }
+      }
+    },
+    {
+      "id": "subtitle",
+      "kind": "text",
+      "note": "Organiza el estudio. Haz espacio para avanzar.",
+      "grid": "B0:F0",
+      "box": {
+        "x": 0.1732,
+        "y": 0.0645,
+        "w": 0.3906,
+        "h": 0.0244
+      },
+      "px": {
+        "x": 266,
+        "y": 66,
+        "w": 600,
+        "h": 25
+      },
+      "aspect": 24,
+      "palette": [
+        {
+          "hex": "#f7f7f8",
+          "coverage": 0.8539
+        },
+        {
+          "hex": "#5d6d84",
+          "coverage": 0.0722
+        },
+        {
+          "hex": "#8c98aa",
+          "coverage": 0.0378
+        },
+        {
+          "hex": "#bfc9d4",
+          "coverage": 0.035
+        },
+        {
+          "hex": "#485070",
+          "coverage": 0.0011
+        }
+      ],
+      "detail": {
+        "energy": 35.6176
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 36,
+          "capHeightPx": 17.5,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.515,
+          "advTall": 0.5722,
+          "advX": 0.515,
+          "gap": 0.1144,
+          "xRatio": 0.656,
+          "stemW": 0.1361,
+          "contrast": 1.133,
+          "serif": 0.475,
+          "densTall": 0.4611,
+          "densX": 0.5485,
+          "weight": 0.4611
+        },
+        "widthClass": "condensed",
+        "weightClass": "regular"
+      }
+    },
+    {
+      "id": "sample-label",
+      "kind": "text",
+      "note": "Vista previa · datos de ejemplo",
+      "grid": "G0:I0",
+      "box": {
+        "x": 0.694,
+        "y": 0.0293,
+        "w": 0.1204,
+        "h": 0.0176
+      },
+      "px": {
+        "x": 1066,
+        "y": 30,
+        "w": 185,
+        "h": 18
+      },
+      "aspect": 10.2778,
+      "palette": [
+        {
+          "hex": "#f5f6f6",
+          "coverage": 0.7876
+        },
+        {
+          "hex": "#aab0be",
+          "coverage": 0.1882
+        },
+        {
+          "hex": "#7a839d",
+          "coverage": 0.0188
+        },
+        {
+          "hex": "#c8d8e8",
+          "coverage": 0.0054
+        }
+      ],
+      "detail": {
+        "energy": 31.3248
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 24,
+          "capHeightPx": 10.4,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.5769,
+          "advTall": 0.4967,
+          "advX": 0.5769,
+          "gap": 0.0641,
+          "xRatio": 0.7565,
+          "stemW": 0.1879,
+          "contrast": 1.0871,
+          "serif": 0.2901,
+          "densTall": 0.5725,
+          "densX": 0.6436,
+          "weight": 0.5725
+        },
+        "widthClass": "condensed",
+        "weightClass": "bold"
+      }
+    },
+    {
+      "id": "plan-action",
+      "kind": "control",
+      "note": "Planificar sesión",
+      "grid": "I0:J0",
+      "box": {
+        "x": 0.8366,
+        "y": 0.0166,
+        "w": 0.1491,
+        "h": 0.0527
+      },
+      "px": {
+        "x": 1285,
+        "y": 17,
+        "w": 229,
+        "h": 54
+      },
+      "aspect": 4.2407,
+      "palette": [
+        {
+          "hex": "#d86849",
+          "coverage": 0.8916
+        },
+        {
+          "hex": "#f8f7f6",
+          "coverage": 0.0477
+        },
+        {
+          "hex": "#f2d0c4",
+          "coverage": 0.0383
+        },
+        {
+          "hex": "#e9a491",
+          "coverage": 0.0159
+        },
+        {
+          "hex": "#da7c6a",
+          "coverage": 0.0065
+        }
+      ],
+      "detail": {
+        "energy": 16.0965
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "summary",
+      "kind": "chrome",
+      "note": "Compact study time sessions and goal summary",
+      "grid": "B1:I1",
+      "box": {
+        "x": 0.1725,
+        "y": 0.1064,
+        "w": 0.6302,
+        "h": 0.0576
+      },
+      "px": {
+        "x": 265,
+        "y": 109,
+        "w": 968,
+        "h": 59
+      },
+      "aspect": 16.4068,
+      "palette": [
+        {
+          "hex": "#f7f8f8",
+          "coverage": 0.9528
+        },
+        {
+          "hex": "#739c74",
+          "coverage": 0.0179
+        },
+        {
+          "hex": "#42536e",
+          "coverage": 0.0105
+        },
+        {
+          "hex": "#909cac",
+          "coverage": 0.0099
+        },
+        {
+          "hex": "#c0c8d0",
+          "coverage": 0.0088
+        }
+      ],
+      "detail": {
+        "energy": 18.4697
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "next-title",
+      "kind": "text",
+      "note": "Tu siguiente paso",
+      "grid": "I1:J1",
+      "box": {
+        "x": 0.8249,
+        "y": 0.1289,
+        "w": 0.1497,
+        "h": 0.0273
+      },
+      "px": {
+        "x": 1267,
+        "y": 132,
+        "w": 230,
+        "h": 28
+      },
+      "aspect": 8.2143,
+      "palette": [
+        {
+          "hex": "#f7f7f8",
+          "coverage": 0.8594
+        },
+        {
+          "hex": "#0b153a",
+          "coverage": 0.0644
+        },
+        {
+          "hex": "#78899a",
+          "coverage": 0.0368
+        },
+        {
+          "hex": "#596481",
+          "coverage": 0.0197
+        },
+        {
+          "hex": "#1f3853",
+          "coverage": 0.0197
+        }
+      ],
+      "detail": {
+        "energy": 47.781
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 15,
+          "capHeightPx": 15.9,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.5674,
+          "advTall": 0.1891,
+          "advX": 0.5831,
+          "gap": 0.1261,
+          "xRatio": 0.6797,
+          "stemW": 0.1846,
+          "contrast": 1.2163,
+          "serif": 0.361,
+          "densTall": 0.7764,
+          "densX": 0.6256,
+          "weight": 0.7764
+        },
+        "widthClass": "condensed",
+        "weightClass": "black"
+      }
+    },
+    {
+      "id": "next-session",
+      "kind": "chrome",
+      "note": "Upcoming study session information",
+      "grid": "I1:J3",
+      "box": {
+        "x": 0.8242,
+        "y": 0.167,
+        "w": 0.1523,
+        "h": 0.2031
+      },
+      "px": {
+        "x": 1266,
+        "y": 171,
+        "w": 234,
+        "h": 208
+      },
+      "aspect": 1.125,
+      "palette": [
+        {
+          "hex": "#f7f8f8",
+          "coverage": 0.9196
+        },
+        {
+          "hex": "#c7d6cf",
+          "coverage": 0.027
+        },
+        {
+          "hex": "#85a888",
+          "coverage": 0.0246
+        },
+        {
+          "hex": "#536479",
+          "coverage": 0.0165
+        },
+        {
+          "hex": "#939ead",
+          "coverage": 0.0124
+        }
+      ],
+      "detail": {
+        "energy": 18.2706
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "timer",
+      "kind": "control",
+      "note": "25:00 and Empezar enfoque",
+      "grid": "I3:J5",
+      "box": {
+        "x": 0.8249,
+        "y": 0.3975,
+        "w": 0.151,
+        "h": 0.123
+      },
+      "px": {
+        "x": 1267,
+        "y": 407,
+        "w": 232,
+        "h": 126
+      },
+      "aspect": 1.8413,
+      "palette": [
+        {
+          "hex": "#f8f8f8",
+          "coverage": 0.5045
+        },
+        {
+          "hex": "#d86748",
+          "coverage": 0.424
+        },
+        {
+          "hex": "#0b2646",
+          "coverage": 0.0492
+        },
+        {
+          "hex": "#df8c73",
+          "coverage": 0.0119
+        },
+        {
+          "hex": "#f0c2b6",
+          "coverage": 0.0103
+        }
+      ],
+      "detail": {
+        "energy": 21.0491
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "recent-title",
+      "kind": "text",
+      "note": "Sesiones recientes",
+      "grid": "B8:D8",
+      "box": {
+        "x": 0.1829,
+        "y": 0.8164,
+        "w": 0.1432,
+        "h": 0.0273
+      },
+      "px": {
+        "x": 281,
+        "y": 836,
+        "w": 220,
+        "h": 28
+      },
+      "aspect": 7.8571,
+      "palette": [
+        {
+          "hex": "#f7f7f8",
+          "coverage": 0.8558
+        },
+        {
+          "hex": "#0d1638",
+          "coverage": 0.0571
+        },
+        {
+          "hex": "#b7c1cc",
+          "coverage": 0.0422
+        },
+        {
+          "hex": "#505f74",
+          "coverage": 0.0286
+        },
+        {
+          "hex": "#2f3d5d",
+          "coverage": 0.0163
+        }
+      ],
+      "detail": {
+        "energy": 49.4706
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 17,
+          "capHeightPx": 15,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.5673,
+          "advTall": 0.2002,
+          "advX": 0.5673,
+          "gap": 0.1001,
+          "xRatio": 0.6603,
+          "stemW": 0.1897,
+          "contrast": 1.2469,
+          "serif": 0.7741,
+          "densTall": 0.7707,
+          "densX": 0.6515,
+          "weight": 0.7707
+        },
+        "widthClass": "condensed",
+        "weightClass": "black"
+      }
+    },
+    {
+      "id": "recent-table",
+      "kind": "chrome",
+      "note": "Table of recent study sessions",
+      "grid": "B8:J9",
+      "box": {
+        "x": 0.1816,
+        "y": 0.8447,
+        "w": 0.793,
+        "h": 0.1221
+      },
+      "px": {
+        "x": 279,
+        "y": 865,
+        "w": 1218,
+        "h": 125
+      },
+      "aspect": 9.744,
+      "palette": [
+        {
+          "hex": "#f6f8f8",
+          "coverage": 0.9755
+        },
+        {
+          "hex": "#617183",
+          "coverage": 0.008
+        },
+        {
+          "hex": "#959fb1",
+          "coverage": 0.0065
+        },
+        {
+          "hex": "#3d4a68",
+          "coverage": 0.0052
+        },
+        {
+          "hex": "#caccda",
+          "coverage": 0.0049
+        }
+      ],
+      "detail": {
+        "energy": 13.3859
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "calendar-day-0",
+      "kind": "control",
+      "note": "Weekly calendar day header, hourly rows and study session buttons",
+      "grid": "B1:C7",
+      "snap": false,
+      "box": {
+        "x": 0.1725,
+        "y": 0.1826,
+        "w": 0.0898,
+        "h": 0.5996
+      },
+      "px": {
+        "x": 265,
+        "y": 187,
+        "w": 138,
+        "h": 614
+      },
+      "aspect": 0.2248,
+      "palette": [
+        {
+          "hex": "#f5f6f6",
+          "coverage": 0.9785
+        },
+        {
+          "hex": "#a6b0bd",
+          "coverage": 0.0137
+        },
+        {
+          "hex": "#6e986e",
+          "coverage": 0.003
+        },
+        {
+          "hex": "#92b8e8",
+          "coverage": 0.0025
+        },
+        {
+          "hex": "#e8a881",
+          "coverage": 0.0023
+        }
+      ],
+      "detail": {
+        "energy": 6.5684
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "calendar-day-1",
+      "kind": "control",
+      "note": "Weekly calendar day header, hourly rows and study session buttons",
+      "grid": "C1:D7",
+      "snap": false,
+      "box": {
+        "x": 0.2624,
+        "y": 0.1826,
+        "w": 0.0898,
+        "h": 0.5996
+      },
+      "px": {
+        "x": 403,
+        "y": 187,
+        "w": 138,
+        "h": 614
+      },
+      "aspect": 0.2248,
+      "palette": [
+        {
+          "hex": "#f5f6f6",
+          "coverage": 0.9955
+        },
+        {
+          "hex": "#c8d8f2",
+          "coverage": 0.0018
+        },
+        {
+          "hex": "#78a878",
+          "coverage": 0.0014
+        },
+        {
+          "hex": "#91b8e8",
+          "coverage": 0.0013
+        }
+      ],
+      "detail": {
+        "energy": 3.8354
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "calendar-day-2",
+      "kind": "control",
+      "note": "Weekly calendar day header, hourly rows and study session buttons",
+      "grid": "D1:E7",
+      "snap": false,
+      "box": {
+        "x": 0.3522,
+        "y": 0.1826,
+        "w": 0.0898,
+        "h": 0.5996
+      },
+      "px": {
+        "x": 541,
+        "y": 187,
+        "w": 138,
+        "h": 614
+      },
+      "aspect": 0.2248,
+      "palette": [
+        {
+          "hex": "#f6f6f6",
+          "coverage": 0.9944
+        },
+        {
+          "hex": "#7ea57e",
+          "coverage": 0.0031
+        },
+        {
+          "hex": "#e8c8a8",
+          "coverage": 0.001
+        },
+        {
+          "hex": "#e8a888",
+          "coverage": 0.0009
+        },
+        {
+          "hex": "#485868",
+          "coverage": 0.0006
+        }
+      ],
+      "detail": {
+        "energy": 4.0394
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "calendar-day-3",
+      "kind": "control",
+      "note": "Weekly calendar day header, hourly rows and study session buttons",
+      "grid": "E1:F7",
+      "snap": false,
+      "box": {
+        "x": 0.4421,
+        "y": 0.1826,
+        "w": 0.0898,
+        "h": 0.5996
+      },
+      "px": {
+        "x": 679,
+        "y": 187,
+        "w": 138,
+        "h": 614
+      },
+      "aspect": 0.2248,
+      "palette": [
+        {
+          "hex": "#f5f6f6",
+          "coverage": 0.9855
+        },
+        {
+          "hex": "#0b294c",
+          "coverage": 0.0093
+        },
+        {
+          "hex": "#b1cdb1",
+          "coverage": 0.0018
+        },
+        {
+          "hex": "#81a87d",
+          "coverage": 0.0018
+        },
+        {
+          "hex": "#c8d8f2",
+          "coverage": 0.0015
+        }
+      ],
+      "detail": {
+        "energy": 4.0797
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "calendar-day-4",
+      "kind": "control",
+      "note": "Weekly calendar day header, hourly rows and study session buttons",
+      "grid": "F1:G7",
+      "snap": false,
+      "box": {
+        "x": 0.5319,
+        "y": 0.1826,
+        "w": 0.0898,
+        "h": 0.5996
+      },
+      "px": {
+        "x": 817,
+        "y": 187,
+        "w": 138,
+        "h": 614
+      },
+      "aspect": 0.2248,
+      "palette": [
+        {
+          "hex": "#f6f6f5",
+          "coverage": 0.9922
+        },
+        {
+          "hex": "#7ba878",
+          "coverage": 0.0028
+        },
+        {
+          "hex": "#e8ac8c",
+          "coverage": 0.0024
+        },
+        {
+          "hex": "#82a28d",
+          "coverage": 0.0015
+        },
+        {
+          "hex": "#d0d0d0",
+          "coverage": 0.0011
+        }
+      ],
+      "detail": {
+        "energy": 3.9059
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "calendar-day-5",
+      "kind": "control",
+      "note": "Weekly calendar day header, hourly rows and study session buttons",
+      "grid": "G1:H7",
+      "snap": false,
+      "box": {
+        "x": 0.6217,
+        "y": 0.1826,
+        "w": 0.0898,
+        "h": 0.5996
+      },
+      "px": {
+        "x": 955,
+        "y": 187,
+        "w": 138,
+        "h": 614
+      },
+      "aspect": 0.2248,
+      "palette": [
+        {
+          "hex": "#f5f6f7",
+          "coverage": 0.9925
+        },
+        {
+          "hex": "#80a880",
+          "coverage": 0.0026
+        },
+        {
+          "hex": "#92b8e8",
+          "coverage": 0.0024
+        },
+        {
+          "hex": "#91b1a1",
+          "coverage": 0.0014
+        },
+        {
+          "hex": "#5f7f6f",
+          "coverage": 0.0012
+        }
+      ],
+      "detail": {
+        "energy": 3.5965
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "calendar-day-6",
+      "kind": "control",
+      "note": "Weekly calendar day header, hourly rows and study session buttons",
+      "grid": "H1:I7",
+      "snap": false,
+      "box": {
+        "x": 0.7116,
+        "y": 0.1826,
+        "w": 0.0898,
+        "h": 0.5996
+      },
+      "px": {
+        "x": 1093,
+        "y": 187,
+        "w": 138,
+        "h": 614
+      },
+      "aspect": 0.2248,
+      "palette": [
+        {
+          "hex": "#f7f7f6",
+          "coverage": 0.9974
+        },
+        {
+          "hex": "#e8a37e",
+          "coverage": 0.0026
+        }
+      ],
+      "detail": {
+        "energy": 2.5548
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    }
+  ]
+}

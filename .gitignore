@@ -1,0 +1,12 @@
+data/
+node_modules/
+.env
+*.log
+coverage/
+.impeccable/review/
+.impeccable/questions/
+.impeccable/build/scaffold/
+backups/
+.impeccable/capture.cjs
+.impeccable/functional.cjs
+.impeccable/og-*.ttf

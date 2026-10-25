@@ -1,0 +1,7 @@
+.impeccable
+data
+backups
+node_modules
+package-lock.json
+public/assets
+docs/*.png

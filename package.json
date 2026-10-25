@@ -1,0 +1,23 @@
+{
+  "name": "ritmo-study-app",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.13.0 <25"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --test tests/*.test.js",
+    "backup": "node scripts/backup.js",
+    "reset-password": "node scripts/reset-password.js",
+    "format": "prettier --write public server scripts tests README.md package.json .github compose.yaml",
+    "format:check": "prettier --check public server scripts tests README.md package.json .github compose.yaml",
+    "test:browser": "node tests/browser.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "prettier": "3.9.10"
+  }
+}
