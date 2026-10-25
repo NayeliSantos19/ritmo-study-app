@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Privacidad y tus datos · Ritmo</title>
+    <meta
+      name="description"
+      content="Conoce cómo Ritmo guarda tus sesiones de estudio, qué diferencia hay entre el modo local y tu cuenta, y cómo exportar o eliminar tus datos."
+    />
+    <link rel="canonical" href="{{ORIGIN}}/privacidad" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <meta property="og:title" content="Privacidad y tus datos · Ritmo" />
+    <meta property="og:description" content="Cómo se guarda tu estudio, con y sin cuenta." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ORIGIN}}/privacidad" />
+    <meta property="og:image" content="{{ORIGIN}}/assets/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <main class="public-page">
+      <header>
+        <a class="brand" href="/">ritmo<span class="brand-dot">.</span></a
+        ><a href="/">Volver a mi semana</a>
+      </header>
+      <h1>Tu estudio también es personal.</h1>
+      <p>
+        Ritmo guarda la información que introduces para organizar tus sesiones, mostrar tu progreso
+        y ayudarte a concentrarte. Esta página describe lo que hace esta aplicación.
+      </p>
+      <h2>Sin cuenta</h2>
+      <p>
+        La vista previa muestra datos de ejemplo. Cuando guardas tu primera sesión o eliges empezar
+        sin cuenta, los datos se guardan en el almacenamiento local de este navegador. No se
+        sincronizan ni se envían al servidor. Borrar los datos del navegador puede eliminarlos;
+        exporta una copia desde Ajustes.
+      </p>
+      <h2>Con una cuenta</h2>
+      <p>
+        Se guardan tu correo electrónico, una representación protegida de tu contraseña, tu meta
+        semanal y las sesiones que registres: tema, materia, fecha, hora, duración, estado y notas.
+        Tus sesiones se asocian a tu cuenta y la aplicación no las publica.
+      </p>
+      <p>
+        Usamos una cookie necesaria para mantener tu sesión, con una duración máxima de siete días.
+        Al cerrar sesión, se invalida. La base de datos está en el servidor que aloja Ritmo; quien
+        administre ese servidor también debe proteger sus copias de seguridad.
+      </p>
+      <h2>Copias y eliminación</h2>
+      <p>
+        Puedes exportar tus sesiones como JSON e importar una copia desde Ajustes. La eliminación de
+        una sesión la retira de la base de datos activa; puede permanecer en copias de seguridad
+        hasta que se renueven.
+      </p>
+      <p>
+        Para eliminar por completo una cuenta y sus sesiones, quien administre la instalación
+        dispone del comando de eliminación documentado en el repositorio. Antes de abrir una
+        instalación al público, su responsable debe proporcionar un canal de contacto y definir el
+        plazo de conservación de sus copias.
+      </p>
+      <h2>Seguridad y límites</h2>
+      <p>
+        No hay analítica, publicidad ni fuentes cargadas desde terceros en la aplicación. Para
+        limitar intentos de acceso, el servidor conserva temporalmente contadores vinculados a
+        resúmenes criptográficos de la dirección IP y el correo. No se envían correos y no existe
+        recuperación automática de contraseña: consérvala en un gestor o solicita asistencia a la
+        persona que administre tu instalación.
+      </p>
+      <p>
+        El temporizador requiere que la página permanezca abierta. Al volver a la pestaña o
+        recargarla, reconstruye el tiempo restante de la sesión de navegación. No envía
+        notificaciones del sistema.
+      </p>
+      <footer>
+        <a href="https://github.com/NayeliSantos19/ritmo-study-app">Repositorio de Ritmo</a
+        ><a href="/">Volver al calendario</a>
+      </footer>
+    </main>
+  </body>
+</html>

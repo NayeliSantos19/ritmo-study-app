@@ -1,0 +1,317 @@
+{
+  "tool": "build-phase",
+  "version": 2,
+  "startedAt": "2026-10-24T22:17:43.317Z",
+  "comp": ".impeccable/mocks/semana-horas.png",
+  "direction": "22c8ab08",
+  "breakpoint": "1536x1024",
+  "artifact": null,
+  "phase": "responsive",
+  "phases": {
+    "comps": {
+      "status": "closed",
+      "openedAt": "2026-10-24T22:17:43.317Z",
+      "closedAt": "2026-10-24T22:27:04.844Z",
+      "attempts": 2,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "3 comps, 1 approved",
+        "approved": ".impeccable/mocks/semana-horas.png",
+        "at": "2026-10-24T22:27:04.843Z"
+      },
+      "forced": null
+    },
+    "spec": {
+      "status": "closed",
+      "openedAt": "2026-10-24T22:27:04.902Z",
+      "closedAt": "2026-10-24T22:28:22.597Z",
+      "attempts": 3,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "18 regions, 0 plates, 5 text regions measured",
+        "at": "2026-10-24T22:28:22.597Z"
+      },
+      "forced": null
+    },
+    "plates": {
+      "status": "closed",
+      "openedAt": "2026-10-24T22:28:22.597Z",
+      "closedAt": "2026-10-24T22:28:22.767Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "no plates owed",
+        "at": "2026-10-24T22:28:22.767Z"
+      },
+      "forced": null
+    },
+    "hero": {
+      "status": "closed",
+      "openedAt": "2026-10-24T22:28:22.767Z",
+      "closedAt": "2026-10-24T22:37:35.940Z",
+      "attempts": 3,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "hero 84% (match)",
+        "score": 0.8427,
+        "verdict": "match",
+        "report": ".impeccable/review/diff/hero/report.json",
+        "sideBySide": "C:/Users/nayel/Documents/Codex/2026-10-24/cha/work/ritmo-study-app/.impeccable/review/diff/hero/side-by-side.png",
+        "worst": [
+          "recent-table drift 64%",
+          "plan-action drift 68%",
+          "subtitle drift 69%"
+        ],
+        "worstIds": [
+          "recent-table",
+          "plan-action",
+          "subtitle"
+        ],
+        "worstCrops": [
+          {
+            "id": "recent-table",
+            "verdict": "drift",
+            "score": {
+              "overall": 0.6443,
+              "structure": 0.8932,
+              "color": 0.9319,
+              "colorIntersection": 0.8793,
+              "paletteMatch": 0.9602,
+              "detail": 0.2451,
+              "detailRaw": 0.3597,
+              "detailAdded": 0.2292,
+              "bands": 0.25
+            },
+            "file": ".impeccable/review/diff/hero/regions/recent-table.png"
+          },
+          {
+            "id": "plan-action",
+            "verdict": "drift",
+            "score": {
+              "overall": 0.6814,
+              "structure": 0.7949,
+              "color": 0.5055,
+              "colorIntersection": 0.0448,
+              "paletteMatch": 0.7536,
+              "detail": 0.7339,
+              "detailRaw": 0.8016,
+              "detailAdded": 0.1354,
+              "bands": 0.9333
+            },
+            "file": ".impeccable/review/diff/hero/regions/plan-action.png"
+          },
+          {
+            "id": "subtitle",
+            "verdict": "drift",
+            "score": {
+              "overall": 0.6864,
+              "structure": 0.8372,
+              "color": 0.9349,
+              "colorIntersection": 0.9056,
+              "paletteMatch": 0.9507,
+              "detail": 0.2275,
+              "detailRaw": 0.3369,
+              "detailAdded": 0.2188,
+              "bands": 0
+            },
+            "file": ".impeccable/review/diff/hero/regions/subtitle.png"
+          }
+        ],
+        "advisories": [
+          "(advisory, above the 72% bar) region calendar-day-2: its ink sits in a 89x479px box in the comp and 74x453px in the build (padding, row height, or size); match the box, not only the position",
+          "(advisory, above the 72% bar) region calendar-day-4: its ink sits in a 90x443px box in the comp and 74x406px in the build (padding, row height, or size); match the box, not only the position",
+          "(advisory, unchanged for 3+ attempts) text sample-label: letter-spacing is wider than the comp's (gap 0.110 vs 0.064 of the cap height); set letter-spacing to close it by about 0px"
+        ],
+        "regionVerdicts": {
+          "sidebar": "match",
+          "headline": "drift",
+          "subtitle": "drift",
+          "sample-label": "drift",
+          "plan-action": "drift",
+          "summary": "drift",
+          "next-title": "match",
+          "next-session": "drift",
+          "timer": "drift",
+          "recent-title": "match",
+          "recent-table": "drift",
+          "calendar-day-0": "drift",
+          "calendar-day-1": "match",
+          "calendar-day-2": "match",
+          "calendar-day-3": "match",
+          "calendar-day-4": "match",
+          "calendar-day-5": "match",
+          "calendar-day-6": "match"
+        },
+        "at": "2026-10-24T22:37:35.939Z"
+      },
+      "forced": null,
+      "readingsSeen": {
+        "text sample-label: letter-spacing is wider than the comp's (gap 0.110 vs 0.064 of the cap height); set letter-spacing to close it by about 0px": 4,
+        "text sample-label: it starts 46px further right than in the comp": 2
+      },
+      "records": 1,
+      "history": [
+        {
+          "at": "2026-10-24T22:35:55.772Z",
+          "score": 0.8096,
+          "worstIds": [
+            "plan-action",
+            "recent-table",
+            "timer"
+          ],
+          "regionVerdicts": {
+            "sidebar": "match",
+            "headline": "drift",
+            "subtitle": "drift",
+            "sample-label": "drift",
+            "plan-action": "contradicted",
+            "summary": "drift",
+            "next-title": "match",
+            "next-session": "drift",
+            "timer": "drift",
+            "recent-title": "drift",
+            "recent-table": "drift",
+            "calendar-day-0": "drift",
+            "calendar-day-1": "match",
+            "calendar-day-2": "match",
+            "calendar-day-3": "match",
+            "calendar-day-4": "match",
+            "calendar-day-5": "match",
+            "calendar-day-6": "match"
+          },
+          "artifactHash": "91f243d5399a"
+        },
+        {
+          "at": "2026-10-24T22:36:53.348Z",
+          "score": 0.829,
+          "worstIds": [
+            "recent-table",
+            "timer",
+            "plan-action"
+          ],
+          "regionVerdicts": {
+            "sidebar": "match",
+            "headline": "drift",
+            "subtitle": "drift",
+            "sample-label": "drift",
+            "plan-action": "drift",
+            "summary": "drift",
+            "next-title": "match",
+            "next-session": "drift",
+            "timer": "drift",
+            "recent-title": "match",
+            "recent-table": "drift",
+            "calendar-day-0": "drift",
+            "calendar-day-1": "match",
+            "calendar-day-2": "match",
+            "calendar-day-3": "match",
+            "calendar-day-4": "match",
+            "calendar-day-5": "match",
+            "calendar-day-6": "match"
+          },
+          "artifactHash": "91f243d5399a"
+        },
+        {
+          "at": "2026-10-24T22:37:35.939Z",
+          "score": 0.8427,
+          "worstIds": [
+            "recent-table",
+            "plan-action",
+            "subtitle"
+          ],
+          "regionVerdicts": {
+            "sidebar": "match",
+            "headline": "drift",
+            "subtitle": "drift",
+            "sample-label": "drift",
+            "plan-action": "drift",
+            "summary": "drift",
+            "next-title": "match",
+            "next-session": "drift",
+            "timer": "drift",
+            "recent-title": "match",
+            "recent-table": "drift",
+            "calendar-day-0": "drift",
+            "calendar-day-1": "match",
+            "calendar-day-2": "match",
+            "calendar-day-3": "match",
+            "calendar-day-4": "match",
+            "calendar-day-5": "match",
+            "calendar-day-6": "match"
+          },
+          "artifactHash": "91f243d5399a"
+        }
+      ]
+    },
+    "sections": {
+      "status": "closed",
+      "openedAt": "2026-10-24T22:37:35.940Z",
+      "closedAt": "2026-10-25T01:07:53.775Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "no mechanical gate",
+        "at": "2026-10-25T01:07:53.775Z"
+      },
+      "forced": null
+    },
+    "motion": {
+      "status": "closed",
+      "openedAt": "2026-10-25T01:07:53.775Z",
+      "closedAt": "2026-10-25T01:08:37.903Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "no mechanical gate",
+        "at": "2026-10-25T01:08:37.903Z"
+      },
+      "forced": null
+    },
+    "responsive": {
+      "status": "open",
+      "openedAt": "2026-10-25T01:08:37.903Z",
+      "closedAt": null,
+      "attempts": 3,
+      "notes": [
+        {
+          "at": "2026-10-25T01:24:57.573Z",
+          "text": "Fresh finish reviewer: ship. Responsive classifier incorrectly marks the visibly present recent title missing. No force or comp-authority downgrade used; see docs/REVIEW.md. Local tests passed; external deployment unexecuted."
+        }
+      ],
+      "gate": {
+        "ok": false,
+        "reasons": [
+          "at desktop width, region recent-title is missing"
+        ],
+        "summary": "desktop 83% (match)",
+        "score": 0.8272,
+        "sideBySide": "C:/Users/nayel/Documents/Codex/2026-10-24/cha/work/ritmo-study-app/.impeccable/review/diff/desktop/side-by-side.png",
+        "at": "2026-10-25T01:19:43.408Z"
+      },
+      "forced": null
+    },
+    "review": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    }
+  },
+  "finish": null,
+  "plates": {}
+}

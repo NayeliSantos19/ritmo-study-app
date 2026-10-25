@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ritmo · Planifica tu estudio y sigue tu progreso</title>
+    <meta
+      name="description"
+      content="Organiza tu semana de estudio, planifica sesiones por materia y registra tu progreso con un temporizador de enfoque. Aprende a tu ritmo."
+    />
+    <link rel="canonical" href="{{ORIGIN}}/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Ritmo" />
+    <meta property="og:title" content="Tu semana, a tu ritmo." />
+    <meta
+      property="og:description"
+      content="Planifica tus sesiones, encuentra tu enfoque y haz visible lo que aprendes."
+    />
+    <meta property="og:url" content="{{ORIGIN}}/" />
+    <meta property="og:image" content="{{ORIGIN}}/assets/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Ritmo: tu semana de estudio, a tu ritmo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f7f8fa" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/assets/martel-sans-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Ritmo",
+        "url": "{{ORIGIN}}/",
+        "description": "Planificación de sesiones de estudio, seguimiento del progreso y temporizador de enfoque para estudiantes.",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web",
+        "inLanguage": "es"
+      }
+    </script>
+    <script src="/app.js" type="module"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <aside class="sidebar" aria-label="Navegación principal">
+      <a class="brand" href="/" aria-label="Ritmo, inicio">ritmo<span class="brand-dot">.</span></a>
+      <nav>
+        <a href="#semana" data-view="semana" aria-current="page"
+          ><span data-icon="calendar"></span><span>Mi semana</span></a
+        >
+        <a href="#sesiones" data-view="sesiones"
+          ><span data-icon="list"></span><span>Mis sesiones</span></a
+        >
+        <a href="#materias" data-view="materias"
+          ><span data-icon="book"></span><span>Materias</span></a
+        >
+        <a href="#ajustes" data-view="ajustes"
+          ><span data-icon="settings"></span><span>Ajustes</span></a
+        >
+      </nav>
+      <button class="account-button" id="account-button">
+        <span data-icon="user"></span><span>Iniciar sesión</span>
+      </button>
+    </aside>
+    <main id="contenido" tabindex="-1">
+      <header class="page-header">
+        <div>
+          <h1 id="page-title">Tu semana, a tu ritmo.</h1>
+          <p id="page-description">Organiza el estudio. Haz espacio para avanzar.</p>
+        </div>
+        <div class="header-actions">
+          <span id="storage-status" class="storage-status" role="status">Cargando tu espacio…</span
+          ><button class="primary" id="plan-button">
+            <span data-icon="plus"></span>Planificar sesión
+          </button>
+        </div>
+      </header>
+      <noscript
+        ><p class="notice">
+          Ritmo necesita JavaScript para el calendario y el temporizador. Actívalo para usar la
+          aplicación. Tus datos no se envían hasta que inicias sesión.
+        </p></noscript
+      >
+      <div id="app-error" class="notice" role="alert" hidden></div>
+      <section id="view-semana" class="view">
+        <div class="workspace">
+          <div class="week-column">
+            <section class="summary" aria-label="Resumen de la semana">
+              <div>
+                <span data-icon="chart"></span
+                ><span><strong id="study-time">0 min</strong> estudiados</span>
+              </div>
+              <div>
+                <span data-icon="list"></span
+                ><span><strong id="session-count">0</strong> sesiones</span>
+              </div>
+              <button id="goal-shortcut" class="summary-goal">
+                <span data-icon="target"></span
+                ><span>Meta semanal <strong id="goal-number">300 min</strong></span
+                ><progress
+                  id="summary-progress"
+                  value="0"
+                  max="300"
+                  aria-label="Progreso de la meta semanal"
+                ></progress
+                ><span id="goal-percent">0%</span>
+              </button>
+            </section>
+            <div class="week-toolbar">
+              <div class="week-switch">
+                <button id="previous-week" class="icon-button" aria-label="Semana anterior">
+                  <span data-icon="left"></span>
+                </button>
+                <h2 id="week-label">Esta semana</h2>
+                <button id="next-week" class="icon-button" aria-label="Semana siguiente">
+                  <span data-icon="right"></span>
+                </button>
+              </div>
+              <button class="text-button" id="today-button">Hoy</button>
+            </div>
+            <section class="calendar" aria-label="Calendario semanal por horas">
+              <div
+                class="calendar-scroll"
+                tabindex="0"
+                aria-label="Calendario: desplázate para ver todos los días"
+              >
+                <div id="calendar-grid" class="calendar-grid">
+                  <p class="loading">Preparando tu semana…</p>
+                </div>
+              </div>
+              <p class="calendar-hint">
+                Selecciona un espacio para planificar o una sesión para editarla.
+              </p>
+            </section>
+          </div>
+          <section class="focus-panel" aria-labelledby="focus-heading">
+            <h2 id="focus-heading">Tu siguiente paso</h2>
+            <div id="next-session" class="next-session">
+              <h3>Un espacio para aprender</h3>
+              <p>Planifica tu próxima sesión y empieza con una sola tarea.</p>
+            </div>
+            <div class="timer-block">
+              <span id="timer" role="timer" aria-label="Tiempo restante">25:00</span
+              ><button id="timer-start" class="primary">
+                <span data-icon="play"></span><span>Empezar enfoque</span>
+              </button>
+              <details class="timer-options">
+                <summary>Opciones de enfoque</summary>
+                <div class="durations" role="group" aria-label="Duración de enfoque">
+                  <button data-duration="15" aria-pressed="false">15 min</button
+                  ><button data-duration="25" aria-pressed="true">25 min</button
+                  ><button data-duration="45" aria-pressed="false">45 min</button>
+                </div>
+                <div class="timer-secondary">
+                  <button id="timer-reset" class="text-button">Reiniciar</button
+                  ><button id="immersive-button" class="text-button">Modo enfoque</button>
+                </div>
+                <p id="timer-message" aria-live="polite">Una tarea. Un momento para avanzar.</p>
+              </details>
+              <button id="timer-save" class="secondary" hidden>Registrar este esfuerzo</button>
+            </div>
+            <button id="quick-record" class="record-link">
+              <span data-icon="plus"></span>Registrar una sesión pasada
+            </button>
+          </section>
+        </div>
+        <section class="recent-section" aria-labelledby="recent-heading">
+          <div class="section-heading">
+            <h2 id="recent-heading">Sesiones recientes</h2>
+            <a href="#sesiones">Ver todas</a>
+          </div>
+          <div id="recent-sessions" class="table-scroll">
+            <p class="empty">Aquí aparecerá lo que vayas aprendiendo.</p>
+          </div>
+        </section>
+      </section>
+      <section id="view-sesiones" class="view" hidden>
+        <div class="section-heading">
+          <label class="search-label" for="search"
+            >Buscar por tema o materia<input
+              id="search"
+              type="search"
+              placeholder="Ej. funciones, historia…" /></label
+          ><button class="secondary" id="record-button">
+            <span data-icon="plus"></span>Registrar sesión
+          </button>
+        </div>
+        <div id="all-sessions" class="table-scroll"></div>
+      </section>
+      <section id="view-materias" class="view" hidden>
+        <p class="view-intro">
+          Todo tu estudio, organizado por materia. Los totales incluyen únicamente sesiones
+          completadas.
+        </p>
+        <div id="subject-list"></div>
+      </section>
+      <section id="view-ajustes" class="view settings" hidden>
+        <section>
+          <h2>Una meta a tu medida</h2>
+          <p>Elige cuántos minutos quieres dedicar al estudio cada semana.</p>
+          <form id="goal-form" class="inline-form">
+            <label for="weekly-goal"
+              >Minutos por semana<input
+                id="weekly-goal"
+                type="number"
+                min="1"
+                max="10080"
+                required
+                value="300" /></label
+            ><button class="primary">Guardar meta</button>
+          </form>
+        </section>
+        <section>
+          <h2>Tus datos, contigo</h2>
+          <p id="data-explanation">
+            Sin cuenta puedes explorar con datos de ejemplo o guardar tus sesiones en este
+            navegador. Con una cuenta, se guardan en el servidor.
+          </p>
+          <div class="button-row">
+            <button class="secondary" id="export-button">Exportar JSON</button
+            ><label class="secondary file-label"
+              >Importar JSON<input id="import-file" type="file" accept="application/json,.json"
+            /></label>
+          </div>
+          <p class="muted">
+            Puedes importar una copia de la versión anterior de Ritmo. La importación evita
+            duplicados por identificador.
+          </p>
+          <button id="migrate-button" class="text-button" hidden>
+            Importar sesiones de la versión anterior</button
+          ><button id="upload-local-button" class="text-button" hidden>
+            Copiar mis datos locales a mi cuenta
+          </button>
+        </section>
+        <section>
+          <h2 id="account-heading">Tu espacio personal</h2>
+          <p id="account-explanation">
+            Crea una cuenta para guardar tu estudio y consultarlo desde otros dispositivos.
+          </p>
+          <div class="button-row">
+            <button class="primary" id="settings-account">Crear cuenta o iniciar sesión</button
+            ><button class="secondary" id="local-mode">Empezar sin cuenta</button>
+          </div>
+          <p class="muted">
+            El modo local pertenece a este navegador. Exporta una copia para conservarlo.
+          </p>
+        </section>
+        <section>
+          <h2>Acerca de Ritmo</h2>
+          <p>Un espacio para planificar tu estudio, concentrarte y reconocer tu progreso.</p>
+          <a href="/privacidad">Cómo se guardan tus datos</a>
+        </section>
+      </section>
+      <footer>
+        <span>Un poco cada día, a tu ritmo.</span><a href="/privacidad">Privacidad</a>
+      </footer>
+    </main>
+    <dialog id="session-dialog" aria-labelledby="session-dialog-title">
+      <form id="session-form">
+        <div class="section-heading">
+          <h2 id="session-dialog-title">Planificar sesión</h2>
+          <button
+            type="button"
+            class="icon-button"
+            data-close="session-dialog"
+            aria-label="Cerrar formulario"
+          >
+            <span data-icon="close"></span>
+          </button>
+        </div>
+        <input id="session-id" type="hidden" /><label for="topic"
+          >¿Qué vas a estudiar?<input
+            id="topic"
+            maxlength="120"
+            required
+            placeholder="Ej. Repaso de funciones" /></label
+        ><label for="subject"
+          >Materia<input
+            id="subject"
+            list="subjects"
+            maxlength="60"
+            required
+            placeholder="Ej. Matemáticas" /></label
+        ><datalist id="subjects"></datalist>
+        <div class="form-row">
+          <label for="date"
+            >Fecha<input id="date" type="date" min="2000-01-01" max="2100-12-31" required /></label
+          ><label for="time">Hora<input id="time" type="time" required value="15:00" /></label>
+        </div>
+        <div class="form-row">
+          <label for="minutes"
+            >Duración en minutos<input
+              id="minutes"
+              type="number"
+              min="1"
+              max="1440"
+              value="25"
+              required /></label
+          ><label for="session-status"
+            >Estado<select id="session-status">
+              <option value="planned">Planificada</option>
+              <option value="completed">Completada</option>
+            </select></label
+          >
+        </div>
+        <label for="notes"
+          >Notas <span class="muted">(opcional)</span
+          ><textarea
+            id="notes"
+            maxlength="1000"
+            rows="3"
+            placeholder="Una intención o algo que quieras recordar"
+          ></textarea>
+        </label>
+        <p id="session-error" class="form-error" role="alert"></p>
+        <div class="form-actions">
+          <button id="delete-session" class="danger text-button" type="button" hidden>
+            Eliminar sesión</button
+          ><button class="primary" id="save-session">Guardar sesión</button>
+        </div>
+      </form>
+    </dialog>
+    <dialog id="account-dialog" aria-labelledby="auth-heading">
+      <form id="auth-form">
+        <div class="section-heading">
+          <h2 id="auth-heading">Vuelve a tu ritmo.</h2>
+          <button
+            class="icon-button"
+            type="button"
+            data-close="account-dialog"
+            aria-label="Cerrar acceso"
+          >
+            <span data-icon="close"></span>
+          </button>
+        </div>
+        <p id="auth-description">Inicia sesión para continuar con tu semana.</p>
+        <label for="email"
+          >Correo electrónico<input
+            id="email"
+            type="email"
+            autocomplete="username"
+            maxlength="254"
+            required /></label
+        ><label for="password"
+          >Contraseña<input
+            id="password"
+            type="password"
+            autocomplete="current-password"
+            minlength="12"
+            maxlength="128"
+            required
+        /></label>
+        <p class="muted" id="password-hint">
+          Usa al menos 12 caracteres. Puedes pegar una frase o usar un gestor de contraseñas.
+        </p>
+        <p id="auth-error" class="form-error" role="alert"></p>
+        <button id="auth-submit" class="primary full">Iniciar sesión</button
+        ><button id="auth-switch" type="button" class="text-button full">
+          ¿Es tu primera vez? Crear cuenta
+        </button>
+        <p class="muted">
+          Al crear tu cuenta, consulta <a href="/privacidad">cómo guardamos tus datos</a>. No se
+          envían correos ni hay recuperación automática; conserva tu contraseña.
+        </p>
+      </form>
+    </dialog>
+    <dialog id="confirm-dialog" aria-labelledby="confirm-heading">
+      <form method="dialog">
+        <h2 id="confirm-heading">¿Eliminar esta sesión?</h2>
+        <p id="confirm-copy">Se eliminará de tu espacio. Esta acción no se puede deshacer.</p>
+        <div class="button-row">
+          <button value="cancel" class="secondary" autofocus>Cancelar</button
+          ><button value="confirm" class="primary">Eliminar</button>
+        </div>
+      </form>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>
