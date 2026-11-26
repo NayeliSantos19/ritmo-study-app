@@ -1,10 +1,16 @@
 # Despliegue de Ritmo
 
-## Instalación compatible
+## Demo pública de solo lectura
+
+La [demo pública](https://nayelisantos19.github.io/ritmo-demo/) se sirve desde la carpeta [`ritmo-demo/` del repositorio de GitHub Pages](https://github.com/NayeliSantos19/NayeliSantos19.github.io/tree/main/ritmo-demo). El calendario y las sesiones usan datos de ejemplo. El temporizador funciona en el navegador. La demo no tiene cuentas, no guarda sesiones y no requiere API, SQLite ni Supabase.
+
+Los cambios en `public/` de este repositorio corresponden a la versión completa. Para actualizar la demo, publica también los cambios pertinentes en `ritmo-demo/` y conserva sus rutas relativas y su comportamiento de solo lectura.
+
+## Instalación de la versión completa
 
 Una instancia Node.js 24, disco persistente y HTTPS. Puede ejecutarse en Linux con Docker o como proceso Node detrás de un proxy. Esta configuración aún no se ha desplegado en un proveedor externo.
 
-No uses GitHub Pages, disco efímero ni varias réplicas compartiendo SQLite. Frontend y API deben estar en el mismo origen.
+Aloja el frontend y la API en el mismo origen, con una sola instancia y un disco persistente para SQLite. GitHub Pages aloja la demo estática.
 
 ## Docker Compose con HTTPS
 

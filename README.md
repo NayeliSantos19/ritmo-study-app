@@ -1,19 +1,24 @@
 # Ritmo · Tu semana, a tu ritmo.
 
-Planifica el estudio por horas y sigue tu progreso por materia. Aplicación en español con HTML semántico, CSS y JavaScript sin React ni Vite; servidor Node.js 24 y base de datos SQLite real.
+Ritmo ayuda a planificar la semana de estudio, consultar el progreso por materia y concentrarse con un temporizador. Su interfaz está hecha con HTML, CSS y JavaScript. La versión completa usa Node.js 24 y SQLite.
 
-> Esta versión requiere un servidor. GitHub Pages no puede alojar la autenticación ni la base de datos. La configuración de despliegue está preparada, pero todavía no hay una nueva instalación pública.
+## Demo pública
 
-![Calendario de Ritmo en escritorio](docs/ritmo-desktop.png)
+**[Abrir la demo de Ritmo](https://nayelisantos19.github.io/ritmo-demo/)**
 
-## Ejecutar localmente
+Explora el calendario semanal, consulta sesiones y materias de ejemplo y prueba el temporizador. La demo es de solo lectura, funciona sin cuenta y no guarda datos de estudio. Se aloja en GitHub Pages como un sitio estático, sin servidor ni Supabase.
+
+En escritorio, el panel reúne la navegación a la izquierda, el calendario y las tarjetas de progreso en el centro y la próxima sesión y el temporizador a la derecha. En pantallas pequeñas, los paneles se apilan.
+
+Para crear, editar o guardar sesiones, ejecuta la versión completa de este repositorio.
+
+## Ejecutar la versión completa localmente
 
 Necesitas Node.js 24.13 o posterior de la rama 24. No hay dependencias de producción ni compilación del frontend.
 
 ```sh
 git clone https://github.com/NayeliSantos19/ritmo-study-app.git
 cd ritmo-study-app
-git switch feat/ritmo-professional-redesign
 npm start
 ```
 
@@ -36,7 +41,7 @@ node --env-file=.env server/index.js
 - Temporizador con pausa, restauración al recargar y modo de enfoque.
 - Cuentas para consultar el estudio guardado en el mismo servidor desde otros dispositivos.
 
-## Tres formas de entrar
+## Modos de la versión completa
 
 **Vista previa:** datos ilustrativos etiquetados. No se copian automáticamente a una cuenta.
 
@@ -60,7 +65,7 @@ server/
   migrations/           Esquema SQL versionado
 scripts/                Copias y mantenimiento de cuentas
 tests/                  Dominio, API y recorrido en navegador
-docs/DEPLOY.md          Despliegue fuera de Vercel
+docs/DEPLOY.md          Demo estática y despliegue con Node.js y SQLite
 DESIGN.md               Sistema visual con Impeccable
 ```
 
@@ -107,7 +112,7 @@ El temporizador requiere la página abierta y no envía notificaciones. El calen
 
 ## Despliegue
 
-Consulta [la guía de despliegue y mantenimiento](docs/DEPLOY.md): Docker Compose, HTTPS con Caddy y volumen persistente. No depende de Vercel ni de un proveedor concreto.
+La demo pública utiliza GitHub Pages. La versión completa requiere Node.js, HTTPS y un disco persistente para SQLite. Consulta [la guía de despliegue y mantenimiento](docs/DEPLOY.md) para ambas modalidades.
 
 ## Créditos
 
