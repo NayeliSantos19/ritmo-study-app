@@ -11,13 +11,13 @@
   font-display: swap;
 }
 :root {
-  --bg: #f7f8fa;
+  --bg: #eef0f8;
   --surface: #fff;
-  --ink: #203b52;
-  --muted: #52667b;
-  --line: #e3e9ef;
-  --accent: #ba482c;
-  --accent-hover: #9d3820;
+  --ink: #242542;
+  --muted: #545b75;
+  --line: #dddff0;
+  --accent: #5053a4;
+  --accent-hover: #3f438e;
   --sage: #e1ece3;
   --blue: #e1edfb;
   --peach: #f6e7d9;
@@ -44,7 +44,7 @@ body {
 }
 ::selection {
   background: #f0ccb9;
-  color: #203b52;
+  color: #242542;
 }
 button,
 input,
@@ -80,7 +80,7 @@ input:focus-visible,
 textarea:focus-visible,
 select:focus-visible,
 [tabindex]:focus-visible {
-  outline: 3px solid #336e9d;
+  outline: 3px solid #5053a4;
   outline-offset: 4px;
 }
 button {
@@ -153,7 +153,7 @@ svg.icon {
   flex-direction: column;
   border-right: 1px solid var(--line);
   z-index: 5;
-  background: #f4f6f9;
+  background: #fff;
 }
 .brand {
   font-family:
@@ -189,8 +189,8 @@ nav a:hover,
   background: #e9edf2;
 }
 nav a[aria-current='page'] {
-  background: #f3e9e5;
-  color: #973c27;
+  background: #e9eafb;
+  color: #3f438e;
   font-weight: 600;
 }
 .account-button {
@@ -271,7 +271,7 @@ main {
   border: 0;
   background: none;
   padding: 8px;
-  color: #9d3f28;
+  color: #444795;
   min-height: 40px;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -356,11 +356,11 @@ progress::-webkit-progress-bar {
   background: #e9edf1;
 }
 progress::-webkit-progress-value {
-  background: #729c77;
+  background: #6268b8;
   border-radius: 8px;
 }
 progress::-moz-progress-bar {
-  background: #729c77;
+  background: #6268b8;
   border-radius: 8px;
 }
 .week-toolbar {
@@ -505,7 +505,7 @@ progress::-moz-progress-bar {
   background: var(--event-color, #598361);
 }
 .event:hover {
-  box-shadow: 0 4px 12px #203b5220;
+  box-shadow: 0 4px 12px #24254220;
   z-index: 2;
 }
 .event strong,
@@ -547,7 +547,7 @@ progress::-moz-progress-bar {
   font-size: 21px;
 }
 .next-session {
-  background: #f0f5f1;
+  background: #edf0ff;
   padding: 18px;
   border-radius: 9px;
   min-height: 208px;
@@ -658,7 +658,7 @@ progress::-moz-progress-bar {
 }
 .section-heading > a {
   font-size: 14px;
-  color: #9d3f28;
+  color: #444795;
 }
 .table-scroll {
   overflow-x: auto;
@@ -705,7 +705,7 @@ td:first-child {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: var(--event-color, #729c77);
+  background: var(--event-color, #6268b8);
 }
 .empty {
   text-align: center;
@@ -792,7 +792,7 @@ td:first-child {
   width: 100%;
 }
 .file-label:focus-within {
-  outline: 3px solid #336e9d;
+  outline: 3px solid #5053a4;
   outline-offset: 4px;
 }
 .muted {
@@ -820,7 +820,7 @@ dialog {
   box-shadow: 0 22px 80px #10263f40;
 }
 dialog::backdrop {
-  background: #203b5266;
+  background: #24254266;
 }
 dialog .section-heading {
   margin-bottom: 18px;
@@ -1336,7 +1336,7 @@ textarea {
 @media (min-width: 1301px) {
   .header-actions .primary {
     min-width: 229px;
-    background: #c45134;
+    background: #5053a4;
     font-size: 20px;
   }
   .header-actions {
@@ -1357,7 +1357,7 @@ textarea {
     display: none;
   }
   .timer-block > .primary {
-    background: #c45134;
+    background: #5053a4;
     font-size: 20px;
   }
   .timer-block .durations,
@@ -1427,7 +1427,7 @@ textarea {
   display: block;
 }
 .timer-options summary:focus-visible {
-  outline: 3px solid #336e9d;
+  outline: 3px solid #5053a4;
   outline-offset: 2px;
 }
 .immersive .timer-options {
@@ -1465,5 +1465,157 @@ textarea {
 @media (min-width: 1301px) {
   :root {
     --hour: min(46px, 2.9948vw);
+  }
+}
+
+
+/* Dashboard */
+.sidebar {
+  box-shadow: 2px 0 16px #272d5712;
+}
+.page-header {
+  position: relative;
+  isolation: isolate;
+  align-items: center;
+  min-height: 138px;
+  margin-bottom: 20px;
+  padding: 24px;
+  overflow: hidden;
+  background: linear-gradient(115deg, #fff 50%, #e4e8ff);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+.study-motif {
+  position: absolute;
+  z-index: -1;
+  top: -36px;
+  right: 21%;
+  width: 150px;
+  height: 176px;
+  transform: rotate(-19deg);
+  pointer-events: none;
+}
+.study-motif::before,
+.study-motif::after,
+.study-motif span {
+  position: absolute;
+  width: 124px;
+  height: 74px;
+  border-radius: 12px;
+  content: '';
+}
+.study-motif::before {
+  top: 76px;
+  left: 0;
+  background: #d9ddf9;
+}
+.study-motif::after {
+  top: 57px;
+  left: 11px;
+  background: #efdaea;
+}
+.study-motif span {
+  z-index: 1;
+  top: 38px;
+  left: 22px;
+  background: #edeefe;
+  border: 3px solid #d1d6fa;
+}
+.week-column {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+}
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  height: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.summary > div,
+.summary > div + div,
+.summary-goal {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  gap: 6px 10px;
+  width: 100%;
+  min-height: 90px;
+  padding: 12px;
+  white-space: normal;
+  border: 1px solid #d7def8;
+  border-radius: 12px;
+  background: #e3e9ff;
+  color: #303e76;
+}
+.summary > div + div {
+  background: #eae4fa;
+  border-color: #e0d7f6;
+  color: #4e3975;
+}
+.summary-goal {
+  margin: 0;
+  background: #f8e9f0;
+  border-color: #efdbe5;
+  color: #70425c;
+  text-align: left;
+}
+.summary progress {
+  flex: 1 1 36%;
+  min-width: 36px;
+}
+.week-toolbar {
+  margin: 0;
+  padding: 6px 0;
+}
+.calendar,
+.focus-panel,
+.recent-section {
+  border-radius: 15px;
+  box-shadow: 0 4px 14px #292d5e0a;
+}
+.focus-panel {
+  align-self: start;
+  padding: 18px;
+}
+.recent-section {
+  background: var(--surface);
+  margin-top: 0;
+  padding: 14px;
+}
+@media (max-width: 1000px) {
+  .study-motif {
+    right: 30%;
+    opacity: 0.5;
+  }
+}
+@media (max-width: 700px) {
+  .page-header {
+    min-height: 0;
+    padding: 18px;
+  }
+  .study-motif {
+    right: -40px;
+    opacity: 0.3;
+  }
+  .summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .summary-goal {
+    grid-column: 1 / -1;
+    min-height: 55px;
+  }
+  .summary > div,
+  .summary > div + div {
+    min-height: 63px;
+  }
+  .recent-section {
+    padding: 10px;
   }
 }

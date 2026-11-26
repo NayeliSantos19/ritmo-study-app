@@ -23,7 +23,7 @@
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Ritmo: tu semana de estudio, a tu ritmo" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#f7f8fa" />
+    <meta name="theme-color" content="#eef0f8" />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
     <link
       rel="preload"
@@ -71,6 +71,7 @@
     </aside>
     <main id="contenido" tabindex="-1">
       <header class="page-header">
+        <div class="study-motif" aria-hidden="true"><span></span></div>
         <div>
           <h1 id="page-title">Tu semana, a tu ritmo.</h1>
           <p id="page-description">Organiza el estudio. Haz espacio para avanzar.</p>
@@ -139,9 +140,18 @@
                 Selecciona un espacio para planificar o una sesión para editarla.
               </p>
             </section>
+            <section class="recent-section" aria-labelledby="recent-heading">
+              <div class="section-heading">
+                <h2 id="recent-heading">Sesiones recientes</h2>
+                <a href="#sesiones">Ver todas</a>
+              </div>
+              <div id="recent-sessions" class="table-scroll">
+                <p class="empty">Aquí aparecerá lo que vayas aprendiendo.</p>
+              </div>
+            </section>
           </div>
           <section class="focus-panel" aria-labelledby="focus-heading">
-            <h2 id="focus-heading">Tu siguiente paso</h2>
+            <h2 id="focus-heading">Próxima sesión</h2>
             <div id="next-session" class="next-session">
               <h3>Un espacio para aprender</h3>
               <p>Planifica tu próxima sesión y empieza con una sola tarea.</p>
@@ -171,15 +181,6 @@
             </button>
           </section>
         </div>
-        <section class="recent-section" aria-labelledby="recent-heading">
-          <div class="section-heading">
-            <h2 id="recent-heading">Sesiones recientes</h2>
-            <a href="#sesiones">Ver todas</a>
-          </div>
-          <div id="recent-sessions" class="table-scroll">
-            <p class="empty">Aquí aparecerá lo que vayas aprendiendo.</p>
-          </div>
-        </section>
       </section>
       <section id="view-sesiones" class="view" hidden>
         <div class="section-heading">
